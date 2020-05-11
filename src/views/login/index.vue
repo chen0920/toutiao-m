@@ -117,7 +117,7 @@ export default {
         // console.log(123)
         this.$toast.success('登陆成功')
         // 将后端返回的用户登陆状态（ token等数据 ）放到vuex容器中
-        // this.$store.commit('setUser', data.data)
+        this.$store.commit('setUser', data.data)
       } catch (err) {
         this.$toast.fail('登陆失败,手机号验证码错误')
         console.log(err)
