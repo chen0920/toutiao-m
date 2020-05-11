@@ -14,3 +14,14 @@ export const login = data => {
     data
   })
 }
+
+/**
+ *登陆/注册
+ */
+export const sendSms = data => {
+  return request({
+    method: 'get',
+    url: `/app/v1_0/sms/codes/${data}`,
+    data
+  })
+}
