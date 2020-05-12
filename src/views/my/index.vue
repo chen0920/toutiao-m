@@ -52,9 +52,9 @@
 
 <div class="not-login">
       <div @click="$router.push('/login')">
-        <img class="mobile" src="/手机.png">
+        <!-- <img class="mobile" src="./shouji.png"> -->
       </div>
-      <div class="text">登录 / 注册</div>
+      <!-- <div class="text">登录 / 注册</div> -->
     </div>
 
 <van-grid class="nav-grid mb-4" :column-num="2">
@@ -123,7 +123,9 @@ export default {
         height: 16px;
         color: #666666;
       }
-      .data-info {
+
+    }
+    .data-info {
         .data-info-item {
           height: 65px;
           color: #fff;
@@ -142,12 +144,9 @@ export default {
         }
       }
       /deep/ .van-grid-item__content {
-      background-color: unset;
+        background-color: unset;
     }
-    }
-
-  }
-  /deep/ .nav-grid {
+      /deep/ .nav-grid {
         .nav-grid-item {
           height: 70px;
           .toutiao {
@@ -165,10 +164,11 @@ export default {
           }
         }
       }
-}
-  .logout-cell {
+      .logout-cell {
     text-align: center;
     color: #d86262;
+  }
+    }
   }
   .mb-4 {
     margin-bottom: 4px;
