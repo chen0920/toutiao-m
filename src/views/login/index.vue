@@ -1,12 +1,13 @@
 <template>
   <div class="login-container">
+    <!-- 导航栏 -->
     <van-nav-bar
     class="app-nav-bar"
       title="注册/登陆"
       left-arrow
       @click-left="$router.back()"
     />
-
+    <!-- /导航栏 -->
   <!-- 登陆表单 -->
     <!--
       基于van=form 组件包裹所有的表单项  vanfield
